@@ -92,6 +92,8 @@ class ContentPolicy(HTMLParser):
 
 
 def validate_styles(styles: str) -> None:
+    if re.search(r"</style\b|<script\b", styles, re.I):
+        raise ValueError("CSS style breakout or script markup is forbidden")
     if re.search(r"@import\b", styles, re.I):
         raise ValueError("CSS @import is forbidden")
     for quote, value in re.findall(r"url\(\s*(['\"]?)(.*?)\1\s*\)", styles, re.I | re.S):

@@ -32,6 +32,8 @@ npx skills update
 
 Para instalar o refrescar desde el estado más reciente del repositorio, ejecutar de nuevo `npx skills add Sebastian-AS/asmart-skills`.
 
+Las copias descargadas antes de esta comprobación necesitan una actualización o reimportación inicial para recibir la regla; no puede aplicarse retroactivamente. Una copia nueva consulta GitHub en cada uso solo si el agente puede acceder a la red y revisar sus archivos. Si no puede, debe informar que la versión no se comprobó y enlazar este repositorio. Las skills cargadas no se sincronizan por sí solas.
+
 ## Derechos
 
 La publicación no otorga una licencia abierta general de la marca ASmartSolution. Los recursos de terceros conservan sus propios avisos y condiciones en `THIRD_PARTY_NOTICES.md` y junto a sus archivos.

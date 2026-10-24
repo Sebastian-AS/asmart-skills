@@ -5,6 +5,8 @@ description: Reuse ASmartSolution's modern visual identity, CSS, JavaScript effe
 
 # ASmartDesign
 
+At the start of every use, check this skill against the latest public source. Follow [the upstream freshness check](references/upstream-freshness.md). If GitHub or file updates are unavailable in the current agent, report the limitation and source link; do not imply that a loaded skill updates itself.
+
 ASmartSolution logos must use their official SVG source, preserving proportions. Do not substitute a PNG/JPEG logo in HTML, components or editable compositions. Raster previews, posters and rendered video may contain the rasterized result of that SVG. Course production belongs to Campus; use the single asmart-video-guide entry and its portable/Campus contracts for installation and integration.
 
 Make the target project feel like ASmartSolution by reusing its actual elements. Preserve the target's content, functions, and format. The bundled CSS, visual JavaScript, and React components are a source library. The primary capture is Workshop/Campus (15 October 2026), covering the public site and workspace. The older Workshop/harness capture remains a secondary source.

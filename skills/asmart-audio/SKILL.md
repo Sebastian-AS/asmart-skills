@@ -5,6 +5,8 @@ description: Coordinar voz en español, transcripción y música de fondo para p
 
 # Audio ASmartSolution
 
+At the start of every use, check this skill against the latest public source. Follow [the upstream freshness check](references/upstream-freshness.md). If GitHub or file updates are unavailable in the current agent, report the limitation and source link; do not imply that a loaded skill updates itself.
+
 Módulo independiente de integración. Usarlo sin exigir un proyecto de video para una muestra de voz, una narración, una transcripción o una selección musical. No implementa motores propios de síntesis, reconocimiento ni mezcla.
 
 ## Dependencias y ejecución

@@ -25,7 +25,7 @@ Valid background values are `neural`, `ripple`, and `none`. Keep styles limited 
 - A package must have 1–80 slides, unique IDs matching `^[a-zA-Z0-9_-]{1,80}$`, a nonempty title up to 160 characters, and 1920×1080 dimensions.
 - Each slide needs a nonempty title up to 160 characters; notes are at most 4,000 characters; slide HTML is at most 200,000 UTF-8 bytes; the complete serialized JSON package, including styles, is at most 6 MiB.
 - Slide HTML contains only inner slide content. Do not add a player shell, navigation controls, player scripts, app shell, accounts, authentication, upload logic, per-user Worker, or R2 credentials.
-- The renderer rejects `<script>`, `<iframe>`, `<object>`, `<embed>`, `<base>`, meta refresh, inline `on*` handlers, `javascript:` href/src, and external HTTP(S) image sources. CSS may not use `@import` or external `url()` resources. HTTPS links on slide content, such as a contact link, are allowed.
+- The renderer rejects `<script>`, `<iframe>`, `<object>`, `<embed>`, `<base>`, meta refresh, inline `on*` handlers, `javascript:` href/src, and external HTTP(S) image sources. Styles must be CSS only; `</style>` breakout, script markup, `@import`, and external `url()` resources are rejected. HTTPS links on slide content, such as a contact link, are allowed.
 - Campus is responsible for storage and access control, including private R2 objects. A content package is not an authorization or storage implementation.
 - A standalone HTML file is not a package. If HTML is explicitly needed as a transport wrapper, it is allowed only when it contains an `application/campus-presentation+json` script island with the package JSON; do not embed a duplicate player.
 

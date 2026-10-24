@@ -5,6 +5,8 @@ description: Producir y corregir videos de ASmartSolution con ASmartDesign, Hype
 
 # Producción de video ASmartSolution
 
+At the start of every use, check this skill against the latest public source. Follow [the upstream freshness check](references/upstream-freshness.md). If GitHub or file updates are unavailable in the current agent, report the limitation and source link; do not imply that a loaded skill updates itself.
+
 Esta es la entrada única al proceso. Coordina las skills especializadas; no las fusiona ni copia sus manuales. Para cápsulas y presentaciones, el resultado principal es una plataforma web navegable fiel al contenido y a ASmartDesign; el video es una exportación complementaria cuando se solicita o forma parte del producto. Para encargos de video independiente, conservar ese formato. Ambos conservan proyecto editable y evidencia de revisión. Leer `asmart-video-guide/references/web-module.md` para el contrato web, apertura/cierre, compresión y descarga.
 
 ## Contrato obligatorio
