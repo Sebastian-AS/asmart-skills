@@ -1,0 +1,347 @@
+{
+  "captured": "2026-10-12",
+  "files": [
+    {
+      "asset": "assets/source/css/account.css",
+      "source": "<local-workspace>/Workshop/harness/public/css/account.css",
+      "sha256": "8b82939a0de5f4db703c07e4433009c39a1d4c5b7f97a71062ed0a7101075018"
+    },
+    {
+      "asset": "assets/source/css/admin-widgets.css",
+      "source": "<local-workspace>/Workshop/harness/public/css/admin-widgets.css",
+      "sha256": "642c775f9d15ff79418d13f202dcb2719b6686c76792c24e04ee019c1b13bd33"
+    },
+    {
+      "asset": "assets/source/css/lobby-base.css",
+      "source": "<local-workspace>/Workshop/harness/public/css/lobby-base.css",
+      "sha256": "c5007c3ea357444f9574b074b7029252f87344d33c1afc4f2b30c9119f1f7706"
+    },
+    {
+      "asset": "assets/source/css/shared-expand.css",
+      "source": "<local-workspace>/Workshop/harness/public/css/shared-expand.css",
+      "sha256": "33c7ebdfb3744d228af3851da9cf156fcc3f3fd852b901fa94f8aba8c9dba2a9"
+    },
+    {
+      "asset": "assets/source/css/login.css",
+      "source": "<local-workspace>/Workshop/harness/public/css/login.css",
+      "sha256": "8217a060c26b73fea1a724184144764859934bc86dc88bf452b30f5f9846ac4c"
+    },
+    {
+      "asset": "assets/source/css/swim-lane-mapper.css",
+      "source": "<local-workspace>/Workshop/harness/public/css/swim-lane-mapper.css",
+      "sha256": "c3d599fe251688be236544283680ec209829abdb9cf53476488758963ac070a2"
+    },
+    {
+      "asset": "assets/source/css/manual-reader.css",
+      "source": "<local-workspace>/Workshop/harness/public/css/manual-reader.css",
+      "sha256": "6c9ff49276bcc427396b9d8319b7db01fa37de54ba7982f0f10da8211a8e917f"
+    },
+    {
+      "asset": "assets/source/css/esfera.css",
+      "source": "<local-workspace>/Workshop/harness/public/css/esfera.css",
+      "sha256": "b611973e277062baf4c2a1f8498423c70bebf2dd02e49ccb35fc8d798770a82f"
+    },
+    {
+      "asset": "assets/source/css/tareas.css",
+      "source": "<local-workspace>/Workshop/harness/public/css/tareas.css",
+      "sha256": "d7a4402f37e4683869781d6764e6c3fd63262b6ded414bb3d16a9d8946d4911c"
+    },
+    {
+      "asset": "assets/source/css/propuesta.css",
+      "source": "<local-workspace>/Workshop/harness/public/css/propuesta.css",
+      "sha256": "ffe00317924aed7c3d48d3761ac1c0ae8a15ba5b6e80046412e260fc860c5a5a"
+    },
+    {
+      "asset": "assets/source/css/swim-lane-view.css",
+      "source": "<local-workspace>/Workshop/harness/public/css/swim-lane-view.css",
+      "sha256": "7fb1d0f12a663722a4a423f6be4a365ee411fb95254e69f4dc6731a88f0c2f40"
+    },
+    {
+      "asset": "assets/source/css/landing.css",
+      "source": "<local-workspace>/Workshop/harness/public/css/landing.css",
+      "sha256": "201390f97b91049ad8f7120e43f7679989617bfbc0cc001c086f31309d886525"
+    },
+    {
+      "asset": "assets/source/css/globals.css",
+      "source": "<local-workspace>/Workshop/harness/public/css/globals.css",
+      "sha256": "2d62caef408173bb76c55e0e7e5ace9d478c185adb4f7ff6e4dd7d1e678f0fdf"
+    },
+    {
+      "asset": "assets/source/css/landing-axis.css",
+      "source": "<local-workspace>/Workshop/harness/public/css/landing-axis.css",
+      "sha256": "f6e64f93f99ec653ef8dad210e68c14171470bf41e742c724629bad16dc25471"
+    },
+    {
+      "asset": "assets/source/js/constellation-field.js",
+      "source": "<local-workspace>/Workshop/harness/public/js/constellation-field.js",
+      "sha256": "90fa5d579b870c8015439a99418ab6d1171b74cf14acb75f789fb07b4a2f1440"
+    },
+    {
+      "asset": "assets/source/js/landing-text.js",
+      "source": "<local-workspace>/Workshop/harness/public/js/landing-text.js",
+      "sha256": "8646bd0352470af597b32bd732ad2c3da85968c5d26f5c7ff6377144ae4732c3"
+    },
+    {
+      "asset": "assets/source/js/landing-layer.js",
+      "source": "<local-workspace>/Workshop/harness/public/js/landing-layer.js",
+      "sha256": "64bb98b69ff8d92f0559c3b0fcbeb91dc0236a61e6d2445f0ed71bf5267d333d"
+    },
+    {
+      "asset": "assets/source/js/landing-axis.js",
+      "source": "<local-workspace>/Workshop/harness/public/js/landing-axis.js",
+      "sha256": "1f5273cbbd0e31714b679af019f1fac03f6fc08ce5eb7d509652e716a9a824f9"
+    },
+    {
+      "asset": "assets/source/js/line-ripple.js",
+      "source": "<local-workspace>/Workshop/harness/public/js/line-ripple.js",
+      "sha256": "f58e19393b388b96a9e2aff9454954765a75185dbf9d70d70e9533d75a427546"
+    },
+    {
+      "asset": "assets/source/js/login-ripple.js",
+      "source": "<local-workspace>/Workshop/harness/public/js/login-ripple.js",
+      "sha256": "bbcbc1a6aa9a4ce75f761f2dd85f9e0e862020d4fb72fb28a1b0001ab7877517"
+    },
+    {
+      "asset": "assets/source/js/topology-field.js",
+      "source": "<local-workspace>/Workshop/harness/public/js/topology-field.js",
+      "sha256": "e227ae099f2c7d8e71def30ec7fc906660dafdede84d062a37c004fda9b2f1e0"
+    },
+    {
+      "asset": "assets/source/js/lobby-sphere.js",
+      "source": "<local-workspace>/Workshop/harness/public/js/lobby-sphere.js",
+      "sha256": "913543ee3c4447d2a98992d9d8f6a85a860e6dd3ec5d2579fba9d3a39cc280f6"
+    },
+    {
+      "asset": "assets/source/js/shared-expand.js",
+      "source": "<local-workspace>/Workshop/harness/public/js/shared-expand.js",
+      "sha256": "a77512556680ec097752a0c047bea1e9fda7a565d1af7a8faa36cdaf4e6a399f"
+    }
+  ],
+  "campus": {
+    "captured": "2026-10-15",
+    "source_root": "<local-workspace>/Workshop/Campus",
+    "git_root": "<local-workspace>/Brain",
+    "commit": "49ea822f6c95ace7a7dfb5ab521bf2c4dcf752e2",
+    "scope": "Presentation sources for the complete site: public, login, workspace, manuals, editor, tasks, account, admin and process tools. Customer datasets, API routes, auth secrets and backend libraries excluded. Some components are reference-only because they import product state or APIs.",
+    "files": [
+      {
+        "asset": "assets/campus/app/codex.css",
+        "source": "<local-workspace>/Workshop/Campus/app/codex.css",
+        "source_relative": "app/codex.css",
+        "sha256": "3bf9535855635364abdb93c1fcce23d5a14439b68f55844506b387987e8ca63d",
+        "bytes": 55709
+      },
+      {
+        "asset": "assets/campus/app/manual/editar/studio.css",
+        "source": "<local-workspace>/Workshop/Campus/app/manual/editar/studio.css",
+        "source_relative": "app/manual/editar/studio.css",
+        "sha256": "725007c6ba59682f96283d79f066b07411a3d364649fb0ddcb8880c7c82a8b7e",
+        "bytes": 11012
+      },
+      {
+        "asset": "assets/campus/design-system/MASTER.md",
+        "source": "<local-workspace>/Workshop/Campus/design-system/MASTER.md",
+        "source_relative": "design-system/MASTER.md",
+        "sha256": "5b725f7740cac65ed7a098927c324126d24e690c6bc4423a3f87af8d61841f37",
+        "bytes": 3567
+      },
+      {
+        "asset": "assets/campus/public/css/account.css",
+        "source": "<local-workspace>/Workshop/Campus/public/css/account.css",
+        "source_relative": "public/css/account.css",
+        "sha256": "8b82939a0de5f4db703c07e4433009c39a1d4c5b7f97a71062ed0a7101075018",
+        "bytes": 6802
+      },
+      {
+        "asset": "assets/campus/public/css/admin-widgets.css",
+        "source": "<local-workspace>/Workshop/Campus/public/css/admin-widgets.css",
+        "source_relative": "public/css/admin-widgets.css",
+        "sha256": "642c775f9d15ff79418d13f202dcb2719b6686c76792c24e04ee019c1b13bd33",
+        "bytes": 11964
+      },
+      {
+        "asset": "assets/campus/public/css/campus-mapper.css",
+        "source": "<local-workspace>/Workshop/Campus/public/css/campus-mapper.css",
+        "source_relative": "public/css/campus-mapper.css",
+        "sha256": "8ff0d8d24fa96c7309aa53596755143558a127ad90eda1ae9db9d09bef94d84a",
+        "bytes": 1182
+      },
+      {
+        "asset": "assets/campus/public/css/esfera.css",
+        "source": "<local-workspace>/Workshop/Campus/public/css/esfera.css",
+        "source_relative": "public/css/esfera.css",
+        "sha256": "b611973e277062baf4c2a1f8498423c70bebf2dd02e49ccb35fc8d798770a82f",
+        "bytes": 3102
+      },
+      {
+        "asset": "assets/campus/public/css/globals.css",
+        "source": "<local-workspace>/Workshop/Campus/public/css/globals.css",
+        "source_relative": "public/css/globals.css",
+        "sha256": "2d62caef408173bb76c55e0e7e5ace9d478c185adb4f7ff6e4dd7d1e678f0fdf",
+        "bytes": 26952
+      },
+      {
+        "asset": "assets/campus/public/css/landing-axis.css",
+        "source": "<local-workspace>/Workshop/Campus/public/css/landing-axis.css",
+        "source_relative": "public/css/landing-axis.css",
+        "sha256": "f6e64f93f99ec653ef8dad210e68c14171470bf41e742c724629bad16dc25471",
+        "bytes": 3174
+      },
+      {
+        "asset": "assets/campus/public/css/landing.css",
+        "source": "<local-workspace>/Workshop/Campus/public/css/landing.css",
+        "source_relative": "public/css/landing.css",
+        "sha256": "201390f97b91049ad8f7120e43f7679989617bfbc0cc001c086f31309d886525",
+        "bytes": 6228
+      },
+      {
+        "asset": "assets/campus/public/css/lobby-base.css",
+        "source": "<local-workspace>/Workshop/Campus/public/css/lobby-base.css",
+        "source_relative": "public/css/lobby-base.css",
+        "sha256": "c5007c3ea357444f9574b074b7029252f87344d33c1afc4f2b30c9119f1f7706",
+        "bytes": 346
+      },
+      {
+        "asset": "assets/campus/public/css/login.css",
+        "source": "<local-workspace>/Workshop/Campus/public/css/login.css",
+        "source_relative": "public/css/login.css",
+        "sha256": "8217a060c26b73fea1a724184144764859934bc86dc88bf452b30f5f9846ac4c",
+        "bytes": 9199
+      },
+      {
+        "asset": "assets/campus/public/css/manual-reader.css",
+        "source": "<local-workspace>/Workshop/Campus/public/css/manual-reader.css",
+        "source_relative": "public/css/manual-reader.css",
+        "sha256": "6c9ff49276bcc427396b9d8319b7db01fa37de54ba7982f0f10da8211a8e917f",
+        "bytes": 11226
+      },
+      {
+        "asset": "assets/campus/public/css/propuesta.css",
+        "source": "<local-workspace>/Workshop/Campus/public/css/propuesta.css",
+        "source_relative": "public/css/propuesta.css",
+        "sha256": "ffe00317924aed7c3d48d3761ac1c0ae8a15ba5b6e80046412e260fc860c5a5a",
+        "bytes": 11403
+      },
+      {
+        "asset": "assets/campus/public/css/shared-expand.css",
+        "source": "<local-workspace>/Workshop/Campus/public/css/shared-expand.css",
+        "source_relative": "public/css/shared-expand.css",
+        "sha256": "33c7ebdfb3744d228af3851da9cf156fcc3f3fd852b901fa94f8aba8c9dba2a9",
+        "bytes": 5155
+      },
+      {
+        "asset": "assets/campus/public/css/swim-lane-mapper.css",
+        "source": "<local-workspace>/Workshop/Campus/public/css/swim-lane-mapper.css",
+        "source_relative": "public/css/swim-lane-mapper.css",
+        "sha256": "c3d599fe251688be236544283680ec209829abdb9cf53476488758963ac070a2",
+        "bytes": 10864
+      },
+      {
+        "asset": "assets/campus/public/css/swim-lane-view.css",
+        "source": "<local-workspace>/Workshop/Campus/public/css/swim-lane-view.css",
+        "source_relative": "public/css/swim-lane-view.css",
+        "sha256": "7fb1d0f12a663722a4a423f6be4a365ee411fb95254e69f4dc6731a88f0c2f40",
+        "bytes": 3199
+      },
+      {
+        "asset": "assets/campus/public/css/tareas.css",
+        "source": "<local-workspace>/Workshop/Campus/public/css/tareas.css",
+        "source_relative": "public/css/tareas.css",
+        "sha256": "d7a4402f37e4683869781d6764e6c3fd63262b6ded414bb3d16a9d8946d4911c",
+        "bytes": 3389
+      },
+      {
+        "asset": "assets/campus/public/images/AS_Horizontal_B.svg",
+        "source": "<local-workspace>/Workshop/Campus/public/images/AS_Horizontal_B.svg",
+        "source_relative": "public/images/AS_Horizontal_B.svg",
+        "sha256": "91df9d4f056ab71270bb3b20bdfc1f36ce7bf42f7fdf2d966f1133d9a7b81784",
+        "bytes": 55697
+      },
+      {
+        "asset": "assets/campus/public/images/AS_Horizontal_N.svg",
+        "source": "<local-workspace>/Workshop/Campus/public/images/AS_Horizontal_N.svg",
+        "source_relative": "public/images/AS_Horizontal_N.svg",
+        "sha256": "e92edec7ae091cd0b49b27709e5bb9fac4aa6425a5a862f5cd0f28573131cf89",
+        "bytes": 55683
+      },
+      {
+        "asset": "assets/campus/public/images/AS_Vertical_B.svg",
+        "source": "<local-workspace>/Workshop/Campus/public/images/AS_Vertical_B.svg",
+        "source_relative": "public/images/AS_Vertical_B.svg",
+        "sha256": "88a4e2124b00417d9360c8ff71debd1a2c2fdd93e4461ade7cc9d52daf13f986",
+        "bytes": 61102
+      },
+      {
+        "asset": "assets/campus/public/images/AS_Vertical_N.svg",
+        "source": "<local-workspace>/Workshop/Campus/public/images/AS_Vertical_N.svg",
+        "source_relative": "public/images/AS_Vertical_N.svg",
+        "sha256": "47a4aa1fcfa0dd603b3a4836f3d9a46f8360134fbcc55b3f5fb13bdb78cc0348",
+        "bytes": 67106
+      },
+      {
+        "asset": "assets/campus/public/js/constellation-field.js",
+        "source": "<local-workspace>/Workshop/Campus/public/js/constellation-field.js",
+        "source_relative": "public/js/constellation-field.js",
+        "sha256": "90fa5d579b870c8015439a99418ab6d1171b74cf14acb75f789fb07b4a2f1440",
+        "bytes": 19350
+      },
+      {
+        "asset": "assets/campus/public/js/landing-axis.js",
+        "source": "<local-workspace>/Workshop/Campus/public/js/landing-axis.js",
+        "source_relative": "public/js/landing-axis.js",
+        "sha256": "1f5273cbbd0e31714b679af019f1fac03f6fc08ce5eb7d509652e716a9a824f9",
+        "bytes": 2607
+      },
+      {
+        "asset": "assets/campus/public/js/landing-layer.js",
+        "source": "<local-workspace>/Workshop/Campus/public/js/landing-layer.js",
+        "source_relative": "public/js/landing-layer.js",
+        "sha256": "64bb98b69ff8d92f0559c3b0fcbeb91dc0236a61e6d2445f0ed71bf5267d333d",
+        "bytes": 2576
+      },
+      {
+        "asset": "assets/campus/public/js/landing-text.js",
+        "source": "<local-workspace>/Workshop/Campus/public/js/landing-text.js",
+        "source_relative": "public/js/landing-text.js",
+        "sha256": "8646bd0352470af597b32bd732ad2c3da85968c5d26f5c7ff6377144ae4732c3",
+        "bytes": 5753
+      },
+      {
+        "asset": "assets/campus/public/js/line-ripple.js",
+        "source": "<local-workspace>/Workshop/Campus/public/js/line-ripple.js",
+        "source_relative": "public/js/line-ripple.js",
+        "sha256": "f58e19393b388b96a9e2aff9454954765a75185dbf9d70d70e9533d75a427546",
+        "bytes": 11894
+      },
+      {
+        "asset": "assets/campus/public/js/lobby-sphere.js",
+        "source": "<local-workspace>/Workshop/Campus/public/js/lobby-sphere.js",
+        "source_relative": "public/js/lobby-sphere.js",
+        "sha256": "913543ee3c4447d2a98992d9d8f6a85a860e6dd3ec5d2579fba9d3a39cc280f6",
+        "bytes": 2116
+      },
+      {
+        "asset": "assets/campus/public/js/login-ripple.js",
+        "source": "<local-workspace>/Workshop/Campus/public/js/login-ripple.js",
+        "source_relative": "public/js/login-ripple.js",
+        "sha256": "bbcbc1a6aa9a4ce75f761f2dd85f9e0e862020d4fb72fb28a1b0001ab7877517",
+        "bytes": 2041
+      },
+      {
+        "asset": "assets/campus/public/js/shared-expand.js",
+        "source": "<local-workspace>/Workshop/Campus/public/js/shared-expand.js",
+        "source_relative": "public/js/shared-expand.js",
+        "sha256": "a77512556680ec097752a0c047bea1e9fda7a565d1af7a8faa36cdaf4e6a399f",
+        "bytes": 1020
+      },
+      {
+        "asset": "assets/campus/public/js/topology-field.js",
+        "source": "<local-workspace>/Workshop/Campus/public/js/topology-field.js",
+        "source_relative": "public/js/topology-field.js",
+        "sha256": "e227ae099f2c7d8e71def30ec7fc906660dafdede84d062a37c004fda9b2f1e0",
+        "bytes": 26445
+      }
+    ]
+  },
+  "distribution_note": "Public visual subset. Captured application TSX, account/customer components and their records are excluded. Source paths are provenance, not runtime dependencies."
+}

@@ -1,0 +1,394 @@
+[
+  {
+    "start": 0,
+    "chapter": "El mapa",
+    "title": "Cinco piezas. Funciones distintas.",
+    "lead": "Separarlas evita pedirle a una pieza lo que hace otra.",
+    "kind": "rows",
+    "items": [
+      {
+        "title": "Hilo",
+        "body": "Conserva la conversación y su contexto.",
+        "icon": "messages",
+        "role": "neutral",
+        "label": ""
+      },
+      {
+        "title": "Agente",
+        "body": "Ejecuta el turno de trabajo.",
+        "icon": "robot",
+        "role": "neutral",
+        "label": ""
+      },
+      {
+        "title": "Skill",
+        "body": "Define un procedimiento reutilizable.",
+        "icon": "book-2",
+        "role": "neutral",
+        "label": ""
+      },
+      {
+        "title": "Herramientas",
+        "body": "Dan capacidades para actuar.",
+        "icon": "tool",
+        "role": "neutral",
+        "label": ""
+      },
+      {
+        "title": "Subagentes",
+        "body": "Reciben partes independientes del encargo.",
+        "icon": "git-branch",
+        "role": "neutral",
+        "label": ""
+      }
+    ],
+    "note": "",
+    "times": [
+      0.4,
+      0.9,
+      1.4,
+      1.9,
+      2.4
+    ],
+    "id": "library-mapa-filas",
+    "end": 12,
+    "duration": 12,
+    "surface": "floating",
+    "variant": "bubble-list",
+    "number": 1,
+    "total": 1,
+    "myth": "",
+    "component": "mapa-filas",
+    "source": "compositions/deck-scene-02.html"
+  },
+  {
+    "start": 0,
+    "chapter": "Hilo y agente",
+    "title": "La conversación conserva. El agente actúa.",
+    "lead": "Trabajan juntos, pero cumplen funciones diferentes.",
+    "kind": "pair",
+    "items": [
+      {
+        "title": "Hilo",
+        "body": "Petición, contexto, documentos y decisiones.",
+        "icon": "messages",
+        "role": "neutral",
+        "label": ""
+      },
+      {
+        "title": "Agente principal",
+        "body": "Interpreta el encargo y usa las capacidades disponibles.",
+        "icon": "robot",
+        "role": "neutral",
+        "label": ""
+      }
+    ],
+    "note": "",
+    "times": [
+      0.4,
+      0.9
+    ],
+    "id": "library-comparacion-agente",
+    "end": 12,
+    "duration": 12,
+    "surface": "floating",
+    "variant": "agent-comparison",
+    "number": 1,
+    "total": 1,
+    "myth": "",
+    "component": "comparacion-agente",
+    "source": "compositions/deck-scene-05.html"
+  },
+  {
+    "start": 0,
+    "chapter": "Hilo y agente",
+    "title": "Otro chat separa el contexto",
+    "lead": "Abrir un hilo no entrena un modelo nuevo.",
+    "kind": "pair",
+    "items": [
+      {
+        "title": "Continuar el hilo",
+        "body": "Conservar el contexto de un mismo objetivo.",
+        "icon": "messages",
+        "role": "neutral",
+        "label": ""
+      },
+      {
+        "title": "Abrir otro hilo",
+        "body": "Separar un encargo o una línea de trabajo.",
+        "icon": "message-plus",
+        "role": "neutral",
+        "label": ""
+      }
+    ],
+    "note": "",
+    "times": [
+      0.4,
+      0.9
+    ],
+    "id": "library-comparacion-escalonada",
+    "end": 12,
+    "duration": 12,
+    "surface": "floating",
+    "variant": "stagger-pair",
+    "number": 1,
+    "total": 1,
+    "myth": "Abrir otro chat entrena un modelo nuevo.",
+    "component": "comparacion-escalonada",
+    "source": "compositions/deck-scene-06.html"
+  },
+  {
+    "start": 0,
+    "chapter": "El mapa",
+    "title": "Cuando mezclas las piezas",
+    "lead": "Más instrucciones no siempre producen un mejor proceso.",
+    "kind": "columns",
+    "items": [
+      {
+        "title": "Repetir reglas",
+        "body": "Escribir el mismo método en cada conversación.",
+        "icon": "repeat",
+        "role": "avoid",
+        "label": "Evitar"
+      },
+      {
+        "title": "Crear sin necesidad",
+        "body": "Configurar especialistas para encargos de un solo uso.",
+        "icon": "user-plus",
+        "role": "avoid",
+        "label": "Evitar"
+      },
+      {
+        "title": "Esperar autonomía",
+        "body": "Suponer que una skill se ejecuta por sí sola.",
+        "icon": "robot",
+        "role": "avoid",
+        "label": "Evitar"
+      }
+    ],
+    "note": "",
+    "times": [
+      0.4,
+      0.9,
+      1.4
+    ],
+    "id": "library-abanico",
+    "end": 12,
+    "duration": 12,
+    "surface": "floating",
+    "variant": "fan-cards",
+    "number": 1,
+    "total": 1,
+    "myth": "",
+    "component": "abanico",
+    "source": "compositions/deck-scene-03.html"
+  },
+  {
+    "start": 0,
+    "chapter": "Caso conductor",
+    "title": "Revisar antes de integrar",
+    "lead": "Un mismo caso nos ayudará a distinguir método, ejecución y evidencia.",
+    "kind": "flow",
+    "items": [
+      {
+        "title": "Cambio",
+        "body": "Una rama y su diff.",
+        "icon": "git-branch",
+        "role": "neutral",
+        "label": ""
+      },
+      {
+        "title": "Revisión",
+        "body": "Riesgos concretos y pruebas.",
+        "icon": "search",
+        "role": "neutral",
+        "label": ""
+      },
+      {
+        "title": "Resultado",
+        "body": "Hallazgos verificables.",
+        "icon": "clipboard-check",
+        "role": "neutral",
+        "label": ""
+      }
+    ],
+    "note": "Ejemplo conceptual de revisión de código.",
+    "times": [
+      0.4,
+      0.9,
+      1.4
+    ],
+    "id": "library-proceso",
+    "end": 12,
+    "duration": 12,
+    "surface": "floating",
+    "variant": "",
+    "number": 1,
+    "total": 1,
+    "myth": "",
+    "component": "proceso",
+    "source": "compositions/deck-scene-04.html"
+  },
+  {
+    "start": 0,
+    "chapter": "Skills",
+    "title": "Un método que vale la pena repetir",
+    "lead": "La skill organiza instrucciones y recursos para una tarea reconocible.",
+    "kind": "code",
+    "items": [
+      {
+        "title": "SKILL.md",
+        "body": "---\nname: review-workflow\ndescription: Revisar un diff antes de merge\n---\nEntradas · pasos · límites · salida",
+        "icon": "file-code",
+        "role": "neutral",
+        "label": ""
+      },
+      {
+        "title": "Recursos",
+        "body": "Referencias, plantillas y scripts cuando aportan valor.",
+        "icon": "books",
+        "role": "neutral",
+        "label": ""
+      }
+    ],
+    "note": "",
+    "times": [
+      0.4,
+      0.9
+    ],
+    "id": "library-documento",
+    "end": 12,
+    "duration": 12,
+    "surface": "paper",
+    "variant": "open-paper",
+    "number": 1,
+    "total": 1,
+    "myth": "",
+    "component": "documento",
+    "source": "compositions/deck-scene-08.html"
+  },
+  {
+    "start": 0,
+    "chapter": "Cierre",
+    "title": "Un flujo de trabajo confiable",
+    "lead": "Método claro. Trabajo delimitado. Evidencia revisada.",
+    "kind": "hero",
+    "items": [
+      {
+        "title": "Agente",
+        "body": "El trabajo que se comprueba.",
+        "icon": "robot",
+        "role": "neutral",
+        "label": ""
+      },
+      {
+        "title": "Skill",
+        "body": "El método que se comparte.",
+        "icon": "book-2",
+        "role": "neutral",
+        "label": ""
+      }
+    ],
+    "note": "",
+    "times": [
+      0.4,
+      0.9
+    ],
+    "id": "library-agente-metodo",
+    "end": 12,
+    "duration": 12,
+    "surface": "floating",
+    "variant": "",
+    "number": 1,
+    "total": 1,
+    "myth": "",
+    "component": "agente-metodo",
+    "source": "compositions/deck-scene-29.html"
+  },
+  {
+    "start": 0,
+    "chapter": "Delegación",
+    "title": "Delegar partes independientes",
+    "lead": "Cada encargo necesita pregunta, alcance y salida.",
+    "kind": "delegate",
+    "items": [
+      {
+        "title": "Agente principal",
+        "body": "Coordina y delimita.",
+        "icon": "robot",
+        "role": "neutral",
+        "label": ""
+      },
+      {
+        "title": "Seguridad",
+        "body": "Investiga riesgos concretos.",
+        "icon": "shield-check",
+        "role": "neutral",
+        "label": ""
+      },
+      {
+        "title": "Pruebas",
+        "body": "Investiga cobertura y casos faltantes.",
+        "icon": "test-pipe",
+        "role": "neutral",
+        "label": ""
+      }
+    ],
+    "note": "",
+    "times": [
+      0.4,
+      0.9,
+      1.4
+    ],
+    "id": "library-delegacion",
+    "end": 12,
+    "duration": 12,
+    "surface": "floating",
+    "variant": "",
+    "number": 1,
+    "total": 1,
+    "myth": "",
+    "component": "delegacion",
+    "source": "compositions/deck-scene-20.html"
+  },
+  {
+    "start": 0,
+    "chapter": "Aplicación de la biblioteca",
+    "title": "De la respuesta a la evidencia",
+    "lead": "Cada paso produce algo que permite comprobar el siguiente.",
+    "kind": "flow",
+    "items": [
+      {
+        "title": "Afirmación",
+        "body": "Delimita qué quieres verificar.",
+        "icon": "messages"
+      },
+      {
+        "title": "Fuente",
+        "body": "Busca el documento y el pasaje relevante.",
+        "icon": "search"
+      },
+      {
+        "title": "Comprobación",
+        "body": "Contrasta alcance, fecha y contexto.",
+        "icon": "file-check"
+      }
+    ],
+    "note": "La fuente debe respaldar la afirmación concreta.",
+    "times": [
+      0.4,
+      0.9,
+      1.4
+    ],
+    "id": "library-evidencia",
+    "end": 12,
+    "duration": 12,
+    "surface": "floating",
+    "variant": "",
+    "number": 1,
+    "total": 1,
+    "myth": "",
+    "component": "proceso-evidencia",
+    "source": "compositions/deck-scene-04.html"
+  }
+]

@@ -1,0 +1,152 @@
+{
+  "app/layout.tsx": [
+    "next",
+    "react"
+  ],
+  "components/Screen.tsx": [
+    "react"
+  ],
+  "components/admin/AdminWidgetsMount.tsx": [
+    "react",
+    "react-dom",
+    "react-dom/client",
+    "./EditProfile",
+    "./TaskWidgetDisclosure"
+  ],
+  "components/admin/EditProfile.tsx": [
+    "react",
+    "motion/react",
+    "./icons"
+  ],
+  "components/admin/TaskWidgetDisclosure.tsx": [
+    "react",
+    "motion/react",
+    "./icons"
+  ],
+  "components/admin/icons.tsx": [
+    "react"
+  ],
+  "components/codex/AnimatedBackground.tsx": [
+    "react"
+  ],
+  "components/codex/Auth.tsx": [
+    "react",
+    "@tabler/icons-react",
+    "./Shell",
+    "./AnimatedBackground",
+    "./RestoredHeader",
+    "@/components/login/SaveToggle",
+    "@/components/login/FloatingInput"
+  ],
+  "components/codex/ClientChat.tsx": [
+    "react",
+    "@tabler/icons-react",
+    "./Shell"
+  ],
+  "components/codex/Landing.tsx": [
+    "react",
+    "@tabler/icons-react",
+    "./Shell",
+    "./AnimatedBackground",
+    "./RestoredHeader"
+  ],
+  "components/codex/Manual.tsx": [
+    "react",
+    "@tabler/icons-react",
+    "./Shell",
+    "@/components/watermelon/discrete-tabs"
+  ],
+  "components/codex/Portal.tsx": [
+    "react",
+    "@tabler/icons-react",
+    "./Shell"
+  ],
+  "components/codex/RestoredHeader.tsx": [
+    "react",
+    "@tabler/icons-react"
+  ],
+  "components/codex/Shell.tsx": [
+    "./AnimatedBackground",
+    "./RestoredHeader",
+    "react",
+    "next/navigation",
+    "@tabler/icons-react"
+  ],
+  "components/codex/Tasks.tsx": [
+    "react",
+    "@tabler/icons-react",
+    "./Shell"
+  ],
+  "components/login/FloatingInput.tsx": [
+    "react",
+    "@/lib/cn"
+  ],
+  "components/login/LoginForm.tsx": [
+    "react",
+    "react-dom",
+    "@/components/login/FloatingInput",
+    "@/components/login/SaveToggle"
+  ],
+  "components/login/LoginPage.tsx": [
+    "react",
+    "@/components/login/LoginForm"
+  ],
+  "components/login/SaveToggle.tsx": [
+    "react",
+    "motion/react",
+    "@/lib/cn"
+  ],
+  "components/manual/ManualPage.tsx": [
+    "@/components/Screen",
+    "@/components/manual/ManualWatermelon",
+    "@/screens/manual.json",
+    "@/components/codex/Shell"
+  ],
+  "components/manual/ManualStudio.tsx": [
+    "@tiptap/core",
+    "@tiptap/react",
+    "@tiptap/starter-kit",
+    "@tiptap/extension-placeholder",
+    "react",
+    "@tabler/icons-react",
+    "@/components/projects/ProjectPicker"
+  ],
+  "components/manual/ManualWatermelon.tsx": [
+    "react",
+    "react-dom",
+    "@/components/watermelon/discrete-tabs",
+    "@/components/watermelon/editable-chip",
+    "@/components/watermelon/pin-item"
+  ],
+  "components/process/ProcessWorkbench.tsx": [
+    "react",
+    "@tabler/icons-react",
+    "@/components/codex/Shell",
+    "@/components/projects/ProjectPicker",
+    "@/lib/process-documents"
+  ],
+  "components/projects/ProjectPicker.tsx": [
+    "react",
+    "@tabler/icons-react"
+  ],
+  "components/watermelon/discrete-tabs.tsx": [
+    "react",
+    "motion/react"
+  ],
+  "components/watermelon/editable-chip.tsx": [
+    "react",
+    "motion/react"
+  ],
+  "components/watermelon/macos-sidebar.tsx": [
+    "motion/react",
+    "react"
+  ],
+  "components/watermelon/morphing-discovery-bar.tsx": [
+    "react",
+    "motion/react"
+  ],
+  "components/watermelon/pin-item.tsx": [
+    "react",
+    "motion/react"
+  ]
+}

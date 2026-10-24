@@ -1,0 +1,6 @@
+interface:
+  display_name: "ASmartDesign"
+  short_description: "Reuse ASmartSolution style, components, and motion"
+  default_prompt: "Use $asmartdesign to restyle this project with ASmartSolution's existing elements and modern visual identity."
+policy:
+  allow_implicit_invocation: true

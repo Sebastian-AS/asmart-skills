@@ -1,0 +1,185 @@
+{
+  "release": "0.1.0-public-preview",
+  "entry": "asmart-video-guide",
+  "distribution_repository": {
+    "url": "https://github.com/Sebastian-AS/asmart-skills",
+    "path": "plugins/asmart-creative",
+    "release": "0.1.0-public-preview",
+    "status": "Published source preview; recipient Claude installation not yet verified"
+  },
+  "skills": [
+    {
+      "name": "asmart-video-guide",
+      "source": {
+        "kind": "bundle",
+        "path": "asmart-video-guide"
+      }
+    },
+    {
+      "name": "asmartdesign",
+      "source": {
+        "kind": "bundle",
+        "path": "asmartdesign"
+      }
+    },
+    {
+      "name": "asmart-video-production",
+      "source": {
+        "kind": "bundle",
+        "path": "asmart-video-production"
+      }
+    },
+    {
+      "name": "asmart-audio",
+      "source": {
+        "kind": "bundle",
+        "path": "asmart-audio"
+      }
+    },
+    {
+      "name": "hyperframes",
+      "source": {
+        "kind": "github",
+        "url": "https://github.com/heygen-com/hyperframes.git",
+        "ref": "a43cdd93bf3f5cd5f04f797b601bac907a99432e",
+        "path": "skills/hyperframes"
+      }
+    },
+    {
+      "name": "hyperframes-core",
+      "source": {
+        "kind": "github",
+        "url": "https://github.com/heygen-com/hyperframes.git",
+        "ref": "a43cdd93bf3f5cd5f04f797b601bac907a99432e",
+        "path": "skills/hyperframes-core"
+      }
+    },
+    {
+      "name": "hyperframes-cli",
+      "source": {
+        "kind": "github",
+        "url": "https://github.com/heygen-com/hyperframes.git",
+        "ref": "a43cdd93bf3f5cd5f04f797b601bac907a99432e",
+        "path": "skills/hyperframes-cli"
+      }
+    },
+    {
+      "name": "hyperframes-animation",
+      "source": {
+        "kind": "github",
+        "url": "https://github.com/heygen-com/hyperframes.git",
+        "ref": "a43cdd93bf3f5cd5f04f797b601bac907a99432e",
+        "path": "skills/hyperframes-animation"
+      }
+    },
+    {
+      "name": "hyperframes-creative",
+      "source": {
+        "kind": "github",
+        "url": "https://github.com/heygen-com/hyperframes.git",
+        "ref": "a43cdd93bf3f5cd5f04f797b601bac907a99432e",
+        "path": "skills/hyperframes-creative"
+      }
+    },
+    {
+      "name": "hyperframes-keyframes",
+      "source": {
+        "kind": "github",
+        "url": "https://github.com/heygen-com/hyperframes.git",
+        "ref": "a43cdd93bf3f5cd5f04f797b601bac907a99432e",
+        "path": "skills/hyperframes-keyframes"
+      }
+    },
+    {
+      "name": "hyperframes-registry",
+      "source": {
+        "kind": "github",
+        "url": "https://github.com/heygen-com/hyperframes.git",
+        "ref": "a43cdd93bf3f5cd5f04f797b601bac907a99432e",
+        "path": "skills/hyperframes-registry"
+      }
+    },
+    {
+      "name": "hyperframes-studio",
+      "source": {
+        "kind": "github",
+        "url": "https://github.com/heygen-com/hyperframes.git",
+        "ref": "a43cdd93bf3f5cd5f04f797b601bac907a99432e",
+        "path": "skills/hyperframes-studio"
+      }
+    },
+    {
+      "name": "hyperframes-audio",
+      "source": {
+        "kind": "github",
+        "url": "https://github.com/heygen-com/hyperframes.git",
+        "ref": "a43cdd93bf3f5cd5f04f797b601bac907a99432e",
+        "path": "skills/hyperframes-audio"
+      }
+    },
+    {
+      "name": "media-use",
+      "source": {
+        "kind": "github",
+        "url": "https://github.com/heygen-com/hyperframes.git",
+        "ref": "a43cdd93bf3f5cd5f04f797b601bac907a99432e",
+        "path": "skills/media-use"
+      }
+    },
+    {
+      "name": "general-video",
+      "source": {
+        "kind": "github",
+        "url": "https://github.com/heygen-com/hyperframes.git",
+        "ref": "a43cdd93bf3f5cd5f04f797b601bac907a99432e",
+        "path": "skills/general-video"
+      }
+    },
+    {
+      "name": "faceless-explainer",
+      "source": {
+        "kind": "github",
+        "url": "https://github.com/heygen-com/hyperframes.git",
+        "ref": "a43cdd93bf3f5cd5f04f797b601bac907a99432e",
+        "path": "skills/faceless-explainer"
+      }
+    },
+    {
+      "name": "slideshow",
+      "source": {
+        "kind": "github",
+        "url": "https://github.com/heygen-com/hyperframes.git",
+        "ref": "a43cdd93bf3f5cd5f04f797b601bac907a99432e",
+        "path": "skills/slideshow"
+      }
+    },
+    {
+      "name": "agent-browser",
+      "source": {
+        "kind": "github",
+        "url": "https://github.com/vercel-labs/agent-browser.git",
+        "ref": "dac13bb87468fe9d74a040d862720f6cc17a9565",
+        "path": "skills/agent-browser"
+      }
+    },
+    {
+      "name": "review-animations",
+      "source": {
+        "kind": "github",
+        "url": "https://github.com/emilkowalski/skills.git",
+        "ref": "2d228630ba1446365f614a108cb8252f1feda202",
+        "path": "skills/review-animations"
+      }
+    },
+    {
+      "name": "motion-design",
+      "source": {
+        "kind": "github",
+        "url": "https://github.com/howseen-ai/claude-motion-design.git",
+        "ref": "3d90d349ef3fdde9b7e89de4df4a2159c9e8697f",
+        "path": "skill/motion-design"
+      },
+      "patch": "quote-description"
+    }
+  ]
+}

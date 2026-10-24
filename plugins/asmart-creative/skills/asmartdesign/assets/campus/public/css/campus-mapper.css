@@ -1,0 +1,16 @@
+:root { --navy:#183753; --accent:#295dcb; --paper:#e8f0f8; --soft:#d8e5f2; --line:#bbcad9; --ink:#183753; --muted:#526579; }
+html,body { background:#d8e5f2; }
+.top { background:#183753; border-bottom-color:#446785; color:#eaf3fc; }
+.top .brand,.top .brand span,.top #saved { color:#eaf3fc; }
+.top .brand-logo { filter:brightness(0) invert(1); }
+.top #title,.top #docSelect { background:#e8f0f8; color:#183753; border-color:#9ab0c7; }
+.top .tb { background:#294f73; color:#fff; box-shadow:none; border:1px solid #557696; }
+.top .tb:hover { background:#356489; color:#fff; transform:none; box-shadow:none; }
+.rail,.panel { background:#e8f0f8; color:#183753; }
+.rail { border-right-color:#adbed0; }.panel { border-left-color:#adbed0; }
+.rail h3,.panel h3 { color:#295dcb; }
+.rail .tool { background:#d7e5f2; color:#183753; box-shadow:none; border:1px solid transparent; }
+.rail .tool:hover,.rail .tool.on { background:#c5d9eb; color:#183753; transform:none; box-shadow:none; border-color:#91abc3; }
+.stagewrap { background:#cadbea; background-image:radial-gradient(#a8bdd0 1px,transparent 1px); }
+.zoombar { background:#e8f0f8; border-color:#a9bed1; }
+.panel .btn { box-shadow:none; }

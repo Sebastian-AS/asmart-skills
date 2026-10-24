@@ -1,0 +1,282 @@
+/* Neural hero — typography + layering (workshop/landing/*) */
+
+:root {
+  --font-display: "Outfit", system-ui, sans-serif;
+  --font-body: "Source Sans 3", system-ui, sans-serif;
+  --neural-bg: #070914;
+  --neural-node: #6b8fd4;
+  --neural-line: rgba(255, 255, 255, 0.28);
+  --hero-scrim: linear-gradient(
+    165deg,
+    rgba(7, 9, 20, 0.28) 0%,
+    rgba(26, 54, 93, 0.48) 50%,
+    rgba(15, 31, 56, 0.58) 100%
+  );
+}
+
+body.landing-neural {
+  font-family: var(--font-body);
+}
+
+body.landing-neural h1,
+body.landing-neural h2,
+body.landing-neural h3,
+body.landing-neural h4,
+body.landing-neural h5,
+body.landing-neural h6,
+body.landing-neural .section-title,
+body.landing-neural .buttons a {
+  font-family: var(--font-display);
+}
+
+body.landing-neural .section-label {
+  font-family: var(--font-display);
+  letter-spacing: 0.14em;
+}
+
+/* Hero: neural replaces flat gradient as base; scrim keeps copy readable */
+.hero.hero--neural {
+  background: var(--neural-bg);
+  color: #f8fafc;
+  isolation: isolate;
+}
+
+.hero.hero--neural::before {
+  display: none;
+}
+
+.hero-network {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: auto;
+  touch-action: pan-y;
+}
+
+.hero-network canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (hover: none), (pointer: coarse) {
+  .hero-network {
+    pointer-events: none;
+  }
+}
+
+.hero-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: var(--hero-scrim);
+  pointer-events: none;
+}
+
+.hero.hero--neural .hero-content {
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero.hero--neural .hero-content a {
+  pointer-events: auto;
+}
+
+.hero.hero--neural .hero-text h1 {
+  position: relative;
+  overflow: hidden;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+  text-wrap: balance;
+  pointer-events: auto;
+  cursor: default;
+}
+
+/* OriginKit Color Sweep — 5s JS loop; position via --sweep-x / --sweep-y on h1 */
+.hero.hero--neural .text-color-sweep:not(.is-split),
+.hero.hero--neural .text-color-sweep .hero-word {
+  --sweep: linear-gradient(
+    105deg,
+    #e8eef8 0%,
+    #ffffff 18%,
+    #a8c0ef 38%,
+    #4a6fc1 50%,
+    #a8c0ef 62%,
+    #ffffff 82%,
+    #e8eef8 100%
+  );
+  background-image: var(--sweep);
+  background-size: 280% 280%;
+  background-position: var(--sweep-x, 0%) var(--sweep-y, 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero.hero--neural .text-color-sweep .hero-word {
+  display: inline-block;
+  animation: hero-fall-in 0.72s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: calc(var(--i, 0) * 70ms);
+}
+
+.hero.hero--neural .hero-fall-item {
+  --fall-i: 0;
+  animation: hero-fall-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: calc(0.08s + var(--fall-i) * 110ms);
+}
+
+.hero.hero--neural .hero-fall-item.text-color-sweep {
+  animation: none;
+}
+
+/* OriginKit merge: LiquidCarve blob clipped to glyphs, FluidText glass */
+.hero-glass {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.22s ease;
+}
+
+.hero.hero--neural .text-color-sweep.is-glass-hover .hero-glass {
+  opacity: 1;
+}
+
+.hero.hero--neural .text-color-sweep .hero-glass .hero-word {
+  display: inline-block;
+  animation: none;
+  opacity: 1;
+  transform: none;
+  background-image:
+    radial-gradient(
+      circle 0.95rem at calc(var(--lx, -999px) - 0.95rem) calc(var(--ly, -999px) - 1.05rem),
+      rgba(255, 255, 255, 0.95) 0%,
+      transparent 72%
+    ),
+    radial-gradient(
+      ellipse var(--rx, 3.6rem) var(--ry, 3.6rem) at var(--lx, -999px) var(--ly, -999px),
+      rgba(196, 214, 238, 0.55) 0%,
+      rgba(232, 238, 248, 0.35) 22%,
+      rgba(255, 255, 255, 0.92) 44%,
+      rgba(168, 192, 239, 0.5) 56%,
+      transparent 70%
+    );
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero.hero--neural h1[data-hero-fall]:not(.is-split) {
+    opacity: 0;
+  }
+}
+
+@keyframes hero-fall-in {
+  from {
+    opacity: 0;
+    transform: translate3d(-3.25rem, -1.1rem, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.hero.hero--neural .hero-text p {
+  font-weight: 400;
+  color: rgba(248, 250, 252, 0.88);
+  letter-spacing: 0.01em;
+}
+
+.hero.hero--neural .btn-primary {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.hero.hero--neural .btn-secondary {
+  font-weight: 500;
+  border-color: rgba(255, 255, 255, 0.65);
+}
+
+.hero.hero--neural .buttons a {
+  width: auto;
+  max-width: none;
+  min-width: 218px;
+  min-height: 62px;
+  padding: 1rem 2.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+}
+
+.hero.hero--neural .buttons a:hover {
+  transform: translateY(-2px);
+}
+
+.hero.hero--neural .btn-primary:hover {
+  box-shadow: 0 18px 32px rgba(7, 9, 20, 0.34), inset 0 1px 0 #fff;
+}
+
+.hero.hero--neural .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Responsive hero — mobile, tablet, desktop */
+@media (max-width: 767px) {
+  .hero.hero--neural {
+    min-height: min(100svh, 44rem);
+    padding: clamp(5.5rem, 16vh, 7rem) 1rem clamp(2.75rem, 8vh, 4rem);
+  }
+
+  .hero.hero--neural .hero-text h1 {
+    font-size: clamp(1.65rem, 7vw, 2.35rem);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero.hero--neural {
+    min-height: min(100svh, 50rem);
+    padding: clamp(6rem, 14vh, 9rem) 1.25rem clamp(3.25rem, 9vh, 5.5rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero.hero--neural {
+    min-height: min(100svh, 56rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero.hero--neural .buttons a,
+  .hero.hero--neural .buttons a:hover {
+    transition: none;
+    transform: none;
+  }
+
+  .hero-network {
+    pointer-events: none;
+  }
+
+  .hero.hero--neural .text-color-sweep:not(.is-split),
+  .hero.hero--neural .text-color-sweep .hero-word,
+  .hero.hero--neural .hero-fall-item {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    color: #f8fafc;
+    -webkit-text-fill-color: #f8fafc;
+    background-image: none;
+  }
+
+  .hero-glass {
+    display: none;
+  }
+}

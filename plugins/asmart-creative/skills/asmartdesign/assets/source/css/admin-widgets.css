@@ -1,0 +1,711 @@
+/* Watermelon Task Widget Disclosure + Edit Profile — visual port (no Tailwind). */
+
+body.lobby-admin .project-block {
+  display: grid;
+  gap: 0.55rem;
+}
+
+body.lobby-admin .admin-task-mount {
+  width: 100%;
+  max-width: none;
+}
+
+/* ——— Task widget ——— */
+.wm-task {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  cursor: pointer;
+  overflow: hidden;
+  user-select: none;
+  border: 2px solid #f5f5f5;
+  background: #fff;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  border-radius: 20px;
+  padding: 12px;
+  color: #262626;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  outline: none;
+  transform: none !important;
+  transition: border-radius 0.3s cubic-bezier(0.25, 0.1, 0.25, 1),
+    padding 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.wm-task.is-open {
+  border-radius: 26px;
+  padding: 22px;
+}
+
+/* Keep disclosure usable if shared-layout Presence stalls mid-flight. */
+.wm-task.is-open .wm-task__expanded {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.wm-task.is-open .wm-task__more {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.wm-task.is-open .wm-task__collapsed-progress,
+.wm-task.is-open .wm-task__subhead {
+  display: none !important;
+}
+
+.wm-task:not(.is-open) .wm-task__expanded,
+.wm-task:not(.is-open) .wm-task__more {
+  display: none !important;
+}
+
+.wm-task:focus-visible {
+  outline: 2px solid #a3a3a3;
+  outline-offset: 2px;
+}
+
+.wm-task__header {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.wm-task__lead {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.125rem 0.5rem 0.125rem 0.375rem;
+  background: #fafafa;
+  min-width: 0;
+}
+
+.wm-task__lead.is-open {
+  background: transparent;
+}
+
+.wm-task__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  margin: 0.125rem 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 1.7px solid #e5e5e5;
+  background: #fff;
+  color: #a3a3a3;
+}
+
+.wm-task__icon.is-open {
+  width: 3rem;
+  height: 3rem;
+}
+
+.wm-task__icon-svg {
+  display: block;
+  color: #a3a3a3;
+}
+
+.wm-task__title {
+  margin: 0;
+  origin: left;
+  transform-origin: left center;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #262626;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wm-task__title.is-open {
+  font-size: 1.875rem;
+  white-space: normal;
+}
+
+.wm-task__collapsed-progress {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: none;
+}
+
+.wm-task__bar {
+  position: relative;
+  height: 0.5rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #f5f5f5;
+}
+
+.wm-task__bar--sm {
+  width: 8rem;
+}
+
+.wm-task__bar--lg {
+  margin: 0 0.25rem;
+  width: 7rem;
+}
+
+.wm-task__fill {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #22c55e;
+}
+
+.wm-task__shimmer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+}
+
+.wm-task__pct {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #737373;
+}
+
+.wm-task__pct--open {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #525252;
+}
+
+.wm-task__more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  border: 2px solid #f5f5f5;
+  background: #fff;
+  padding: 0.375rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.wm-task__subhead {
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.25rem;
+}
+
+.wm-task__chips {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.wm-task__chip {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: #737373;
+}
+
+.wm-task__chip-icon {
+  display: flex;
+  align-items: center;
+  color: currentColor;
+}
+
+.wm-task__hourglass,
+.wm-task__meta-icon {
+  color: #a3a3a3;
+}
+
+.wm-task__expanded {
+  margin-top: 1.5rem;
+  transform-origin: top center;
+}
+
+.wm-task__progress-pill {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+  border-radius: 999px;
+  border: 1.5px solid #e5e5e5;
+  background: rgb(250 250 250 / 0.5);
+  padding: 0.375rem 0.625rem;
+}
+
+.wm-task__progress-check {
+  display: flex;
+  width: 1.25rem;
+  height: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+}
+
+.wm-task__check-outline {
+  color: #d4d4d4;
+}
+
+.wm-task__progress-count {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #a3a3a3;
+}
+
+.wm-task__tree {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 0 0 2rem 1.5rem;
+}
+
+.wm-task__tree-line {
+  position: absolute;
+  top: 0;
+  bottom: 1rem;
+  left: 0;
+  width: 1.7px;
+  transform-origin: top;
+  background: #d4d4d4;
+}
+
+.wm-task__tree-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.wm-task__tree-elbow {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  height: 30px;
+  width: 1.25rem;
+  border-bottom: 1.7px solid #d4d4d4;
+  border-left: 1.7px solid #d4d4d4;
+  border-bottom-left-radius: 0.75rem;
+}
+
+.wm-task__check {
+  display: flex;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1.7px solid #d4d4d4;
+  background: #fff;
+  color: #fff;
+}
+
+.wm-task__check.is-done {
+  border-color: #525252;
+  background: #525252;
+}
+
+.wm-task__tree-label {
+  margin-left: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #737373;
+}
+
+.wm-task__tree-label.is-done {
+  color: #a3a3a3;
+}
+
+.wm-task__meta-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.wm-task__meta-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 0.25rem;
+  font-weight: 500;
+}
+
+.wm-task__meta-label {
+  display: flex;
+  min-width: 100px;
+  align-items: center;
+  gap: 0.75rem;
+  color: #525252;
+}
+
+.wm-task__badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  opacity: 0.85;
+}
+
+.wm-task__badge--priority {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.wm-task__badge--status {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.wm-task__chevron-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.125rem;
+  padding: 1px;
+}
+
+.wm-task__chevron-wrap--priority {
+  background: #fef2f2;
+}
+
+.wm-task__chevron-wrap--status {
+  background: #fffbeb;
+}
+
+.wm-task__chevron--priority {
+  color: #b91c1c;
+}
+
+.wm-task__chevron--status {
+  color: #b45309;
+}
+
+.wm-task__form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.wm-task__field {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #737373;
+}
+
+.wm-task__field input,
+.wm-task__field select,
+.wm-task__field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.65rem 0.9rem;
+  border: 1.5px solid #e5e5e5;
+  border-radius: 0.85rem;
+  background: #fff;
+  color: #171717;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  outline: none;
+}
+
+.wm-task__field textarea {
+  min-height: 4.2rem;
+  resize: vertical;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.wm-task__field input:focus,
+.wm-task__field select:focus,
+.wm-task__field textarea:focus {
+  border-color: #000;
+}
+
+.wm-task__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 0.25rem;
+}
+
+.wm-task__apply {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.55rem 1.15rem;
+  background: #0f0f0f;
+  color: #fff;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+.wm-task__apply:hover {
+  background: #222;
+}
+
+.wm-task__note {
+  margin: 0;
+  flex: 1 1 10rem;
+  font-size: 0.78rem;
+  color: #737373;
+  line-height: 1.35;
+}
+
+.wm-task__note.is-ok {
+  color: #404040;
+}
+
+/* ——— Edit profile ——— */
+.wm-profile {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  overflow-y: auto;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.wm-profile__backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 0.2);
+  backdrop-filter: blur(1px);
+}
+
+.wm-profile__shell {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 45rem;
+  margin: auto;
+  pointer-events: none;
+}
+
+.wm-profile__panel {
+  pointer-events: auto;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+  border: 1px solid #f0f0f0;
+  background: #f5f5f7;
+  box-shadow: 0 8px 10px rgb(0 0 0 / 0.04);
+}
+
+.wm-profile__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.wm-profile__head h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #010101;
+}
+
+.wm-profile__close {
+  border: 0;
+  background: transparent;
+  color: #a0a0a0;
+  padding: 0.25rem;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.wm-profile__close:hover {
+  color: #9ca3af;
+}
+
+.wm-profile__body {
+  margin: 0;
+}
+
+.wm-profile__card {
+  border-top: 1.6px solid #eae9f2;
+  border-bottom: 1.6px solid #eae9f2;
+  border-radius: 18px;
+  background: #fff;
+}
+
+.wm-profile__fields {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.wm-profile__field {
+  display: grid;
+  gap: 0.375rem;
+}
+
+.wm-profile__field label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #706f6f;
+}
+
+.wm-profile__field input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.625rem 1rem;
+  border-radius: 14px;
+  border: 1.5px solid #dfdde6;
+  background: #fff;
+  color: #131313;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.wm-profile__field input:focus {
+  border-color: #000;
+}
+
+.wm-profile__foot {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 2rem;
+  background: #f5f5f7;
+}
+
+@media (min-width: 640px) {
+  .wm-profile__foot {
+    flex-direction: row;
+  }
+}
+
+.wm-profile__hint {
+  font-size: 13px;
+  color: #767578;
+  line-height: 1.4;
+}
+
+.wm-profile__hint.is-warn {
+  color: #9a3412;
+}
+
+.wm-profile__hint.is-ok {
+  color: #404040;
+  font-weight: 500;
+}
+
+.wm-profile__actions {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .wm-profile__actions {
+    width: auto;
+  }
+}
+
+.wm-profile__btn {
+  flex: 1;
+  border-radius: 999px;
+  padding: 0.5rem 1.25rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+@media (min-width: 640px) {
+  .wm-profile__btn {
+    flex: none;
+  }
+}
+
+.wm-profile__btn--cancel {
+  border: 1.6px solid #e2e2e6;
+  background: #f3f4f6;
+  color: #0f0f0f;
+  font-size: 14px;
+}
+
+.wm-profile__btn--save {
+  border: 0;
+  background: #0f0f0f;
+  color: #fff;
+  font-size: 13px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+.wm-profile__btn--save:hover {
+  background: #222;
+}
+
+/* Keep share-open hide behavior for React mounts */
+body.lobby-admin:has(.share.is-open) .admin-task-mount,
+body.lobby-admin:has(.share.is-open) .project-block:has(.share:not(.is-open)) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 639px) {
+  .wm-task__title {
+    font-size: 0.875rem;
+  }
+
+  .wm-task__title.is-open {
+    font-size: 1.25rem;
+  }
+
+  .wm-task__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  .wm-task__icon.is-open {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .wm-task__bar--sm {
+    width: 4rem;
+  }
+
+  .wm-task__pct {
+    font-size: 0.75rem;
+  }
+
+  .wm-task.is-open {
+    border-radius: 24px;
+    padding: 1.25rem;
+  }
+
+  .wm-profile__head,
+  .wm-profile__foot {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}

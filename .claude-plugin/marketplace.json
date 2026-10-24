@@ -1,0 +1,14 @@
+{
+  "name": "asmart-skills",
+  "owner": {
+    "name": "ASmartSolution"
+  },
+  "plugins": [
+    {
+      "name": "asmart-creative",
+      "source": "./plugins/asmart-creative",
+      "description": "Skills y biblioteca visual compartida ASmartSolution",
+      "version": "0.1.0"
+    }
+  ]
+}
