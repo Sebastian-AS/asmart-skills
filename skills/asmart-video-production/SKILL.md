@@ -116,4 +116,4 @@ Si solo se corrige lo visual, conservar guion, voz, música y cortes aprobados. 
 
 ## Distribution capabilities
 
-In Claude chat, verify actual file, network, execution and media capabilities before using local CLI workflows. When a specialist is absent, preserve the editorial/visual checks and disclose the substitution. Loading these skills does not install a video runtime or grant access to Campus. See asmart-video-guide/references/portable-setup.md.
+Check the available file, network, execution and media capabilities before using local workflows. When a specialist is absent, preserve the editorial and visual checks and disclose the substitution. These skills do not install a video runtime or grant access to Campus. See asmart-video-guide/references/portable-setup.md.

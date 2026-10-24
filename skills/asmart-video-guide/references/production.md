@@ -1,6 +1,6 @@
 # Production choices
 
-For a procedural tutorial, show the actual sequence, relevant cursor motion and observable result. For onboarding, orient the viewer to a main task without covering every feature. For a preview, connect an observed capability to a use and result. For a concept, use diagrams or prepared examples and identify them.
+For a procedural tutorial, show the actual sequence, relevant cursor motion and observable result. For recorridos iniciales, orient the viewer to a main task without covering every feature. For a preview, connect an observed capability to a use and result. For a concept, use diagrams or prepared examples and identify them.
 
 Choose pacing and framing for the viewer and channel. Neither a WhatsApp preview nor an internal help guide has a universal duration. Assign timings after rehearsing or capturing the action and narration.
 

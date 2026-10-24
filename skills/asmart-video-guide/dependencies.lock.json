@@ -3,9 +3,9 @@
   "entry": "asmart-video-guide",
   "distribution_repository": {
     "url": "https://github.com/Sebastian-AS/asmart-skills",
-    "path": "plugins/asmart-creative",
+    "path": "skills/",
     "release": "0.1.0-public-preview",
-    "status": "Published source preview; recipient Claude installation not yet verified"
+    "status": "Public Agent Skills source"
   },
   "skills": [
     {
