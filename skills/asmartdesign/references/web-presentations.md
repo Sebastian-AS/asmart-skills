@@ -48,6 +48,10 @@ Lo estable es la identidad, escala tipográfica, controles y calidad; lo variabl
 
 La unidad de coreografía es el significado: mantener orientación visual desde el inicio y renovar el diagrama cuando la voz desarrolla otra relación dentro de un capítulo. En comparaciones puede mostrarse el conjunto y enfatizarse al mencionarlo; no dejar pantallas vacías esperando la última palabra. No activar por mera coincidencia de vocabulario. Para el perfil de colaboración y contenido, consultar asmart-video-guide/references/working-agreement.md.
 
+## Fondos y variedad por pieza
+
+Elegir el fondo según el encargo, sin repetir un efecto por defecto. Revisar primero las variantes reales de ASmartSolution y las fuentes locales disponibles; si ninguna encaja, buscar una alternativa instalada y adaptarla a la paleta y legibilidad de la marca. Reutilizar la fuente local cuando se elige una variante concreta; no volver a investigar ni instalarla. Mantener un solo efecto por vista y dejarlo sutil detrás del contenido.
+
 
 ## Ajustes explícitos de plataforma · 16 de octubre de 2026
 

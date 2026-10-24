@@ -23,6 +23,8 @@ For course capsules, navigable presentations and their catalogue, read [the exec
 6. For navigable presentations or course video players, read [web presentations](references/web-presentations.md): approved semantic cards, movement, Campus index and discreet video controls. Apply those requirements before borrowing a generic frontend template.
 7. Apply [project workflow](references/project-workflow.md) for React apps or offline HTML presentations. Verify the relevant controls in a browser, with keyboard, small screens, and reduced motion.
 
+When a presentation is content for Campus's shared player, use the [Campus presentation content contract](references/campus-presentation-contract.md). Keep the package limited to slide content and styles; Campus owns the player and private storage integration.
+
 Keep ASmartSolution as the primary visual reference. Other skills and catalogs help implement or refine this identity; their default palettes and demo layouts do not replace it. Use Spanish copy for Curso IA and ASmartSolution, and retain the target project's language elsewhere.
 
 ## Public distribution scope

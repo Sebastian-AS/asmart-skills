@@ -42,3 +42,7 @@ El productor asume investigación, dirección, implementación y revisión. La e
 Entregar enlace funcional al módulo web, MP4 vigente descargable, proyecto editable resoluble y recursos/licencias/transcripción aplicables. Informar brevemente cambios, duración, tamaño de web separado del MP4, y limitaciones reales. No inundar el chat con logs. El producto público no contiene modelos, cachés ni herramientas de producción.
 
 Reutilizar componentes, entornos, música aprobada si sus derechos y tono aplican, fuentes, voz y controles. Evitar instalaciones repetidas, variantes completas descartables y re-render de todo por cambios exclusivos del shell. No abaratar eliminando la revisión. Las skills reducen errores mediante instrucciones y comprobaciones ejecutadas; no garantizan que cualquier modelo obedezca ni convierten un pipeline en un servicio automático por sí solas.
+
+## Revisión proporcionada al cambio
+
+Para cambios simples de fondo, texto o público, reutilizar las comprobaciones existentes. Hacer una revisión visual representativa y comprobar los archivos de entrega. Repetir solo lo que invalida un cambio posterior o lo que detecta un fallo concreto; evitar auditorías equivalentes y exportaciones repetidas sin motivo. Mantener la calidad con una implementación cuidada desde la primera versión. Usar Unslop para la redacción comercial.
