@@ -2,6 +2,8 @@
 
 Use this contract when authoring a presentation that Campus will render in its shared presentation player. Campus owns the reusable player, slide navigation, menu, fullscreen and presenter mode. The package is slide content and visual styling only.
 
+The workspace/library page and the slide canvas are separate targets. A request to change the background of the Campus Presentaciones tool changes its page chrome only; keep existing slide packages and PDFs unchanged unless the user also asks to restyle the presentations themselves.
+
 ## Package shape
 
 ```json
