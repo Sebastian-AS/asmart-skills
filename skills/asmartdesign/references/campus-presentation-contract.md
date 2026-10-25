@@ -18,7 +18,7 @@ Use this contract when authoring a presentation that Campus will render in its s
 }
 ```
 
-Valid background values are `neural`, `ripple`, and `none`. Keep styles limited to the presentation and scope selectors to slide content where practical. Campus injects the shared presentation engine, fonts and selected background. Preserve the ASmartSolution mark as an official SVG; a data URI containing SVG source is acceptable for portable content.
+Valid background values are `neural`, `ripple`, `particle-wave`, and `none`. Keep styles limited to the presentation and scope selectors to slide content where practical. Campus injects the shared presentation engine, fonts and selected background. `particle-wave` uses the shared quiet preset: reduced particle density, low brightness and slow motion; do not embed a second effect or its source in the package. Preserve the ASmartSolution mark as an official SVG; a data URI containing SVG source is acceptable for portable content.
 
 ## Content boundary and validation
 

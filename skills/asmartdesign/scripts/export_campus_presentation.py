@@ -105,7 +105,7 @@ def validate(pkg: dict) -> None:
     if pkg.get("schemaVersion") != 1: raise ValueError("schemaVersion must be 1")
     if not isinstance(pkg.get("title"), str) or not pkg["title"].strip() or len(pkg["title"]) > 160: raise ValueError("title must be 1–160 characters")
     if (pkg.get("width"), pkg.get("height")) != (1920, 1080): raise ValueError("width/height must be 1920×1080")
-    if pkg.get("background") not in {"neural", "ripple", "none"}: raise ValueError("invalid background")
+    if pkg.get("background") not in {"neural", "ripple", "particle-wave", "none"}: raise ValueError("invalid background")
     slides = pkg.get("slides")
     if not isinstance(slides, list) or not 1 <= len(slides) <= 80: raise ValueError("slides must contain 1–80 entries")
     ids = set()
